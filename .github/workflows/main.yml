@@ -8,8 +8,8 @@ on:
 jobs:
   create-bucket:
     runs_on: ubuntu-latest
-      steps:
-      - name: "Configure AWS Credentials" Action for GitHub Actions
+    steps:
+      - name: "Configure AWS Credentials"
         uses: aws-actions/configure-aws-credentials@v4.0.2
           with:
             aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
